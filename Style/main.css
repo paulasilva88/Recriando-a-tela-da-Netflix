@@ -1,0 +1,69 @@
+/**/
+/*Dica: sempre fazer a imagem do projeto no photoshop etc, para codar já tendo uma referência visualdo projeto*/
+
+:root{/*Declaração de variáveis: cores*/
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+*{ /*Reset - Série de comandos para zerar vizualição do css, para
+    a aparência do código, em qualquer navegador ficar igual*/
+    margin: 0; /*Retira as margens de qualquer elementos*/
+    padding: 0; /*Retira os preenchimentos de qualquer elementos*/
+    box-sizing: border-box; /*Impede que os elementos saiam da caixa*/
+}
+
+/*elementos base*/
+body { 
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif; /*A primeira é a fonte principal e as outras só serão usadas se não puder usar a primeira*/
+    color:white;
+}
+
+header .container{ /*A tag header é do html e o container é uma classe criada pelo usuário*/
+    display: flex; /*Flex box, alinha os itens ao arquivo de cima?*/
+    flex-direction: row; /*Organização por linha(row) é o padrão de display flex, por isso não precisa ser colocado*/
+    align-items: center; /*alinhamento vertical centralizado*/
+    justify-content: space-between;/*Alinhamento horizontal, separando o h2 do nav*/
+}
+
+header .logo{
+    margin: 5px;
+    color:var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{ /*Formatação das categorias da netflix*/
+    text-decoration: none; /*Retira as linhas embaixo dos links*/
+    color: #AAA;
+    margin-right: 10px; /*Separa os links para melhorar a vizualização de opções*/
+}
+header nav a:hover{/*hover- Muda as caracteristicas quando o mouse passa sobre*/
+    color:#fff;
+}
+
+/*filme principal*/
+.filme-principal{
+    font-size: 16px;
+    background:  url('/Recriando-a-página-da-Netflix/Imagens/divertidamente-capa.jpg');
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*Segue a mesma direção do flex-direction, se o flex é coluna ()/vertical, o justify-content também se referirá ao vertical*/
+    align-items: flex-start;
+
+}
+
+.filme-principal .descricao{
+    margin-bottom: 40px;
+}
+
+.titulo{
+    font-size: 40px;
+}
+
+
