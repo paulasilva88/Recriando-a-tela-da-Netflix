@@ -46,7 +46,11 @@ header nav a:hover{/*hover- Muda as caracteristicas quando o mouse passa sobre*/
 /*filme principal*/
 .filme-principal{
     font-size: 16px;
-    background:  url('/Recriando-a-página-da-Netflix/Imagens/divertidamente-capa.jpg');
+    
+    background-image:
+  linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/Recriando-a-página-da-Netflix/Imagens/divertidamente-capa.jpg');
+    /*https://developer.mozilla.org/en-US/docs/Web/CSS/background-image - Link que me ajudou a colocar uma transparência preta 
+    sobre a imagem, o da aula não funcionou*/
 
     height: 400px;
     background-size: cover;
@@ -55,15 +59,45 @@ header nav a:hover{/*hover- Muda as caracteristicas quando o mouse passa sobre*/
     flex-direction: column;
     justify-content: center; /*Segue a mesma direção do flex-direction, se o flex é coluna ()/vertical, o justify-content também se referirá ao vertical*/
     align-items: flex-start;
+    
 
 }
 
 .filme-principal .descricao{
+    margin-top: 10px;
     margin-bottom: 40px;
+    
 }
 
-.titulo{
+.filme-principal .titulo{
+    margin-top: 15%; /*Importante deixar em porcentagem para ser mais flexível*/
     font-size: 40px;
+    font-family: 'Trebuchet MS';
+}
+
+/*Formatação dos botões do filme principal*/
+.filme-principal .botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px; /*O 15 px o preenchimento superior e inferior e o 30 é dos lados*/
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: 3s ease all; /*Coloca um delay na transição de cores quando passsamos o mouse sobre*/
+}
+
+/*Mudança do padrao de cor quando passamos o mouse sobre o botão*/
+.filme-principal .botao:hover{
+    background-color: white;
+    color: black;
+    
+}
+
+.filme-principal .botao i {
+    margin: 8px;
 }
 
 
