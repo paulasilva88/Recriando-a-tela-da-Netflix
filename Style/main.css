@@ -99,5 +99,17 @@ header nav a:hover{/*hover- Muda as caracteristicas quando o mouse passa sobre*/
 .filme-principal .botao i {
     margin: 8px;
 }
-
+/*
+# Wraper = envelopar 
+Alguns programadores  consideram Wrappers e containers a 
+mesma coisa, outros não, já que possuem a mesma função
+*/
+.container{ /*Modificar todos os containers do código, 
+    incluindo o do nome Netflix*/
+    margin: 2.5%; /*Margem em porcentagem para ajudar na responsividade*/
+}
+/*Para modificar apenas um container específico:*/
+.filme-principal .container{
+    width: 70%; /*Largura*/
+}
 
