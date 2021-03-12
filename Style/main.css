@@ -16,7 +16,7 @@
 /*elementos base*/
 body { 
     background: var(--preto);
-    font-family: 'Times New Roman', Times, serif; /*A primeira é a fonte principal e as outras só serão usadas se não puder usar a primeira*/
+    font-family: 'Arial', Times, serif; /*A primeira é a fonte principal e as outras só serão usadas se não puder usar a primeira*/
     color:white;
 }
 
@@ -48,7 +48,7 @@ header nav a:hover{/*hover- Muda as caracteristicas quando o mouse passa sobre*/
     font-size: 16px;
     
     background-image:
-  linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/Recriando-a-página-da-Netflix/Imagens/divertidamente-capa.jpg');
+  linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/Recriando-a-tela-da-Netflix/Imagens/divertidamente-capa.jpg');
     /*https://developer.mozilla.org/en-US/docs/Web/CSS/background-image - Link que me ajudou a colocar uma transparência preta 
     sobre a imagem, o da aula não funcionou*/
 
@@ -66,6 +66,7 @@ header nav a:hover{/*hover- Muda as caracteristicas quando o mouse passa sobre*/
 .filme-principal .descricao{
     margin-top: 10px;
     margin-bottom: 40px;
+    justify-content: space-evenly;
     
 }
 
@@ -118,4 +119,8 @@ mesma coisa, outros não, já que possuem a mesma função
     height: 100%;
     width: 100%;
     display: block ;/*Pesquisar para que serve issos*/
+}
+
+.carrossel-filmes{
+    margin-top: 5px;
 }
