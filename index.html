@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Owl css - link de acesso aos qrquivos do carrossel - Pode ficar na head-->
+    <link rel="stylesheet" href="Style/Owl/owl.carousel.min.css"><!--Alt + shif + seta para baixo: copia a linha embaixo-->
+    <link rel="stylesheet" href="Style/Owl/owl.theme.default.min.css">
+    
+    
+    
+    
     <title>NETFLIX CLONE</title>
     <link rel="stylesheet" href="Style/main.css">
 </head>
@@ -36,7 +44,7 @@
                         ASSISTIR AGORA
                     </button>
                     <button role="button" class="botao">
-                        <i class="fas fa-info-circle"></i>
+                        <i class="fas fa-info-circle"></i> <!--Código do ícone tirado do site fonte Awesome-->
                         SABER MAIS
                     </button>
                 </div>
@@ -45,6 +53,45 @@
         
     </main>
 
+    <div class="carrossel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filme" src="Imagens/Mini1.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="Imagens/Mini2.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="Imagens/Mini3.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="Imagens/Mini4.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="Imagens/Mini5.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="Imagens/Mini6.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="Imagens/Mini7.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="Imagens/Mini8.jpg" alt="">
+            </div>
+            
+        </div>
+    </div>
+
+    <!--Link do Font Awesome, para o código acessar os ícones definidos pelo projeto-->
     <script src="https://kit.fontawesome.com/b7370c13cf.js" crossorigin="anonymous"></script> <!--Código que referencia o site fonte Awesome-->
+    
+    <!--Link do JavaScript: colocar depois de toda a página, pois se colocar antes do cógigo da tela pode dar problema-->
+    <script src="Js/Owl/jquery.min.js"> </script>
+    <script src="Js/Owl/owl.carousel.min.js"> </script>
+    <script src="Js/Setup.js"></script>
+
 </body>
 </html>
+
+<!--https://owlcarousel2.github.io/OwlCarousel2/-->

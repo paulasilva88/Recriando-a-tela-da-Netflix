@@ -113,3 +113,9 @@ mesma coisa, outros não, já que possuem a mesma função
     width: 70%; /*Largura*/
 }
 
+/*Configuração das caixas dos filmes*/
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block ;/*Pesquisar para que serve issos*/
+}
